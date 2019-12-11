@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px){
+	.hiden{
+		display: none;
+	}
+}
+@media screen and (max-width: 425px){
+	.hiden{
+		display: flex;
+	}
+	.top-row{
+		flex-direction: column;
+	}
+	.max-column{
+		height: 50px;
+	}
+	.bottom-row{
+		flex-direction: column;
+	}
+	.small-column {
+   	 	flex-basis: 50px;
+   	}
+}

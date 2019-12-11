@@ -1,0 +1,4 @@
+@import "mixins";
+
+@include font-face("serif-bold", "../fonts/PTSerifBold/PTSerifBold");
+@include font-face("open-bold", "../fonts/OpenSansBold", bold);
