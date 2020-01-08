@@ -1,0 +1,135 @@
+@import "vars";
+.sidenav-nav{
+  position: relative;
+}
+.navbar {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 17px;
+  a{
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: -0.01em;
+    color: rgba(0, 0, 0, 0.75);
+    margin: 0 6px 0 0;
+    cursor: pointer;
+    &:hover{
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.75);
+    }
+  }
+  ul{
+    li{
+      list-style-type: none;
+    }
+
+  }
+
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 30px;
+  background: $mainColor;
+  border-radius: 4px;
+  margin: 0;
+  cursor: pointer;
+  img{
+    margin: -2px 12px 0 0;
+  }
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  width: 100%;
+  left: 0;
+  right: 0;
+
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.dropdown-content  {
+  .header{
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 40px 0 40px 0;
+    color: blue;
+    margin-top: 20px;
+    ul{
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      height: 440px;
+      flex-direction: column;
+
+      li{
+        list-style-type: none;
+        a{
+          color: #D62222;
+          font-size: 14px;
+          font-weight: 500;
+          margin-bottom: 25px;
+          display: block;
+          width: 250px;
+          cursor: pointer;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .menu-drop{
+      margin: 0;
+      padding: 0;
+      .menu-drop-title{
+        font-size: 14px;
+        color: blue;
+        font-family: $mainBold;
+        color: #000000;
+        font-size: 16px;
+        margin-bottom: 25px;
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+
+}
+.cwe{
+  position: relative;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.baskets-title-header{
+  font-family: $mainBold;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.75);
+  margin: 0;
+}
+.baskets-price-header{
+  font-weight: 500;
+font-size: 14px;
+color: rgba(0, 0, 0, 0.75);
+margin: 0;
+}
+
+/* Create three equal columns that floats next to each other */
