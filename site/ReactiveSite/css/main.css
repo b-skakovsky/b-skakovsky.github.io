@@ -922,6 +922,54 @@ body {
 p {
   margin: 0; }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 999;
+  -webkit-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible; }
+  .preloader .loader {
+    width: 75px;
+    height: 75px;
+    border: 10px solid white;
+    border-radius: 50%;
+    border-top-color: blue;
+    left: 50%;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    -webkit-animation: 2s spin infinite linear;
+    animation: 2s spin infinite linear; }
+  .preloader.done {
+    opacity: 0;
+    visibility: hidden; }
+
+@-webkit-keyframes spin {
+  form {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg); } }
+
+@keyframes spin {
+  form {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg); } }
+
 .main-screen {
   background: -webkit-radial-gradient(50% 50%, 50% 50%, rgba(12, 4, 27, 0) 0%, #0C041B 100%), url("../img/background/star.png");
   background: -o-radial-gradient(50% 50%, 50% 50%, rgba(12, 4, 27, 0) 0%, #0C041B 100%), url("../img/background/star.png");
