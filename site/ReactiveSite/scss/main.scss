@@ -64,7 +64,6 @@ p{
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
-
 .main-screen{
   background: radial-gradient(50% 50% at 50% 50%, rgba(12, 4, 27, 0) 0%, #0C041B 100%), url('../img/background/star.png');
   background-position: top;
@@ -165,9 +164,7 @@ section.main-screen.main-sub-screen{
   overflow: hidden;
   position: relative;
 }
-.main-content{
 
-}
 .slogan-img{
   margin-top: 50px;
   width: 450px;
